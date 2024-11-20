@@ -3,12 +3,13 @@ package com.mycompany.proiectpoo;
 public class AparatDeSudura extends SculeElectrice 
 {
     protected String tipElectrod; //tipul electordului folosit 
-    
+    protected float grosimeMaxiMaterial;
   //const. fara argumente
     public AparatDeSudura() 
     {
         super();
-        this.tipElectrod = "Necunoscut";
+        this.tipElectrod = "";
+        this.grosimeMaxiMaterial=0.0f;
     }
 
     //const. cu toti parametrii 
@@ -16,6 +17,7 @@ public class AparatDeSudura extends SculeElectrice
     {
         super(firma, putere, greutate);
         this.tipElectrod = tipElectrod;
+        this.grosimeMaxiMaterial= grosimeMaxiMaterial;
     }
 
     //const. copiere
@@ -23,6 +25,7 @@ public class AparatDeSudura extends SculeElectrice
     {
         super(aparat);
         this.tipElectrod = aparat.tipElectrod;
+        this.grosimeMaxiMaterial= aparat.grosimeMaxiMaterial;
     }
 
     //setter,getter
@@ -36,12 +39,23 @@ public class AparatDeSudura extends SculeElectrice
         this.tipElectrod = tipElectrod;
     }
     
+     public float getGrosimeMaxiMaterial() 
+    {
+        return grosimeMaxiMaterial;
+    }
+     
+    public void setGrosimeMaxiMaterial(float grosimeMaxiMaterial) 
+    {
+        this.grosimeMaxiMaterial = grosimeMaxiMaterial;
+    }
+    
     //met. toString
     @Override
     public String toString() 
     {
         return "AparatDeSudura{" +
                 "tipElectrod='" + tipElectrod + '\'' +
+                ", grosimeMaxiMateriale="+ grosimeMaxiMaterial +
                 ", " + super.toString() +
                 '}';
     }
