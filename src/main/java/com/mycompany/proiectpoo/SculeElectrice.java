@@ -35,6 +35,7 @@ class SculeElectrice {
     }
 
     // Metoda toString
+    @Override
     public String toString() {
         return getClass().getSimpleName() + " [Firma: " + firma + ", Putere: " + putere + "W, Greutate: " + greutate + " kg]";
     }
