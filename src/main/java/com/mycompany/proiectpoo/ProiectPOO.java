@@ -105,6 +105,7 @@ public class ProiectPOO {
         System.out.println("\nFierastraie pendulare:");
         for (FierastrauPendular fierastrau : fierastraiePendulare) {
             System.out.println(fierastrau);
+        }
 
         
 
