@@ -1,61 +1,79 @@
-package com.mycompany.proiectpoo;
+    package com.mycompany.proiectpoo;
 
 public class AparatDeSudura extends SculeElectrice 
 {
-    protected String tipElectrod; //tipul electordului folosit 
-    protected float grosimeMaxiMaterial;
-  //const. fara argumente
+    protected String tipElectrod; 
+    protected float grosimeMaxiMaterial; 
+    protected int garantieAni; 
+    protected String tipCurent; 
+    protected float eficientaEnergetica; 
+
     public AparatDeSudura() 
     {
         super();
         this.tipElectrod = "";
-        this.grosimeMaxiMaterial=0.0f;
+        this.grosimeMaxiMaterial = 0.0f;
+        this.garantieAni = 0;
+        this.tipCurent = "";
+        this.eficientaEnergetica = 0.0f;
     }
-
-    //const. cu toti parametrii 
-    public AparatDeSudura(String firma, int putere, float greutate, String tipElectrod) 
-    {
+    
+    public AparatDeSudura(String firma, int putere, float greutate, String tipElectrod, float grosimeMaxiMaterial,int garantieAni, String tipCurent, float eficientaEnergetica) {
         super(firma, putere, greutate);
         this.tipElectrod = tipElectrod;
-        this.grosimeMaxiMaterial= grosimeMaxiMaterial;
+        this.grosimeMaxiMaterial = grosimeMaxiMaterial;
+        this.garantieAni = garantieAni;
+        this.tipCurent = tipCurent;
+        this.eficientaEnergetica = eficientaEnergetica;
     }
 
-    //const. copiere
+
     public AparatDeSudura(AparatDeSudura aparat) 
     {
         super(aparat);
         this.tipElectrod = aparat.tipElectrod;
-        this.grosimeMaxiMaterial= aparat.grosimeMaxiMaterial;
+        this.grosimeMaxiMaterial = aparat.grosimeMaxiMaterial;
+        this.garantieAni = aparat.garantieAni;
+        this.tipCurent = aparat.tipCurent;
+        this.eficientaEnergetica = aparat.eficientaEnergetica;
     }
 
-    //setter,getter
-    public String getTipElectrod() 
+ 
+    public int getGarantieAni() 
     {
-        return tipElectrod;
+        return garantieAni;
+    }
+    public void setGarantieAni(int garantieAni) 
+    {
+        this.garantieAni = garantieAni;
+    }
+    
+    public String getTipCurent()
+    {
+        return tipCurent;
+    }
+    public void setTipCurent(String tipCurent) 
+    {
+        this.tipCurent = tipCurent;
     }
 
-    public void setTipElectrod(String tipElectrod) 
+    public float getEficientaEnergetica() 
     {
-        this.tipElectrod = tipElectrod;
+        return eficientaEnergetica;
     }
-    
-     public float getGrosimeMaxiMaterial() 
+    public void setEficientaEnergetica(float eficientaEnergetica) 
     {
-        return grosimeMaxiMaterial;
+        this.eficientaEnergetica = eficientaEnergetica;
     }
-     
-    public void setGrosimeMaxiMaterial(float grosimeMaxiMaterial) 
-    {
-        this.grosimeMaxiMaterial = grosimeMaxiMaterial;
-    }
-    
-    //met. toString
+
     @Override
-    public String toString() 
-    {
+    public String toString() {
         return "AparatDeSudura{" +
                 "tipElectrod='" + tipElectrod + '\'' +
-                ", grosimeMaxiMateriale="+ grosimeMaxiMaterial +
+                ", grosimeMaxiMaterial=" + grosimeMaxiMaterial +
+                ", garantieAni=" + garantieAni +
+                ", tipCurent='" + tipCurent + '\'' +
+                ", eficientaEnergetica=" + eficientaEnergetica +
                 ", " + super.toString() +
                 '}';
     }
