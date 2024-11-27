@@ -10,10 +10,10 @@ package com.mycompany.proiectpoo;
  */
 
 public class MasinaGaurit extends SculeElectrice {
-    private int numarPercutii; // numarul de percutii pe minut
-     private boolean functiePercutie; // Dacă are sau nu funcție de percuție
-    private int diametruMaximGaurire; // Diametrul maxim de găurire în mm
-    private String tipMandrina; // Tipul mandrinei (automat, manual)
+    private int numarPercutii;
+     private boolean functiePercutie;
+    private int diametruMaximGaurire;
+    private String tipMandrina;
 
 
     // Constructor fara argumente

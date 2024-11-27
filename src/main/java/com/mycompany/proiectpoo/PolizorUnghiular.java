@@ -10,10 +10,10 @@ package com.mycompany.proiectpoo;
  */
 
 public class PolizorUnghiular extends SculeElectrice {
-    private String tipManer; // Tipul manerului (ergonomic, fix, pivotant)
-    private int diametruDisc; // Diametrul discului în mm
-    private int turatieMaxima; // Turația maximă în rotații pe minut (RPM)
-    private boolean protectieSupraIncalzire; // Dacă are protecție la supraîncălzire
+    private String tipManer;
+    private int diametruDisc;
+    private int turatieMaxima;
+    private boolean protectieSupraIncalzire;
 
 
     // Constructor fara argumente

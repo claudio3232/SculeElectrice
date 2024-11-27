@@ -4,11 +4,11 @@ package com.mycompany.proiectpoo;
  * Clasa SurubelnitaElectrica derivata din SculeElectrice.
  */
 public class SurubelnitaElectrica extends SculeElectrice {
-    protected int nrviteze;          // Număr de viteze
-    protected float timpIncarcare;  // Timp de încărcare (ore)
-    protected float autonomie;      // Autonomie (ore)
-    protected String tipAlimentare; // Tip alimentare (ex.: Baterie, Cablu)
-    protected boolean luminaLed;    // Are lumină LED?
+    protected int nrviteze;
+    protected float timpIncarcare;
+    protected float autonomie;
+    protected String tipAlimentare;
+    protected boolean luminaLed;
 
     // Constructor fara argumente
     public SurubelnitaElectrica() {

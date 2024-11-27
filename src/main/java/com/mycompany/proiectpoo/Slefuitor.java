@@ -13,8 +13,8 @@ class Slefuitor extends SculeElectrice {
     private float dimensiuneDisc; // in mm
     private boolean esteProfesional;
     private boolean vitezaVariabila;
-    private String tipSuprafata; // Tipul suprafetei (lemn, metal, piatra)
-    private int garantie; // Perioada garantie in luni
+    private String tipSuprafata; // (lemn, metal, piatra)
+    private int garantie; // in luni
     
     // Constructor fara argumente
     public Slefuitor() {

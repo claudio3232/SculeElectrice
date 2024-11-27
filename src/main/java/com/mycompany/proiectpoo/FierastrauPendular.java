@@ -4,11 +4,11 @@ package com.mycompany.proiectpoo;
  * Clasa FierastrauPendular derivata din SculeElectrice.
  */
 public class FierastrauPendular extends SculeElectrice {
-    protected int vitezaTaiere;         // Viteza de tăiere (RPM)
-    protected boolean vitezaReglabila; // Viteza este reglabilă?
-    protected boolean laserghidaj;     // Are ghidaj cu laser?
-    protected int nivelZgomot;         // Nivelul de zgomot (dB)
-    protected String tipTaiere;        // Tipul de tăiere suportat
+    protected int vitezaTaiere;
+    protected boolean vitezaReglabila;
+    protected boolean laserghidaj;
+    protected int nivelZgomot;
+    protected String tipTaiere;
 
     // Constructor fara argumente
     public FierastrauPendular() {
