@@ -30,13 +30,8 @@ class SurubelnitaElectrica extends SculeElectrice {
         this.autonomie = surubelnita.autonomie;
         this.autonomie = surubelnita.autonomie;
     }
-    @Override
-public String specificatii() {
-    return "Surubelnita electrica de la firma " + firma + ", cu puterea " + putere + "W, greutate " + greutate + " kg.";
-}
-
-
-    // Implementare metoda descriereDetaliata
+  
+   
     public String toString() {
         return super.toString() + ", Numar viteza: " + nrviteze + " trepte, " +
                 "cu autonomie de: " + autonomie + " ore, " +
