@@ -179,7 +179,7 @@ public class ProiectPOO {
             System.out.println(surubelnita);
         }
 
-        System.out.println("Vector Rotopercutoare:");
+        System.out.println("\nVector Rotopercutoare:");
         for (Rotopercutor roto : vectorRotopercutoare) {
             System.out.println(roto);
         }
