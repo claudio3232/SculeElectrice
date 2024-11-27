@@ -11,10 +11,10 @@ package com.mycompany.proiectpoo;
 
 class Slefuitor extends SculeElectrice {
     private float dimensiuneDisc; // in mm
-    private boolean esteProfesional; // Indica daca slefuitorul este destinat uzului profesional
-    private boolean vitezaVariabila; // Indica daca slefuitorul are viteza variabila
-    private String tipSuprafata; // Tipul suprafetei pentru care este destinat slefuitorul (lemn, metal, piatra)
-    private int garantie; // Perioada de garantie in luni
+    private boolean esteProfesional;
+    private boolean vitezaVariabila;
+    private String tipSuprafata; // Tipul suprafetei (lemn, metal, piatra)
+    private int garantie; // Perioada garantie in luni
     
     // Constructor fara argumente
     public Slefuitor() {
