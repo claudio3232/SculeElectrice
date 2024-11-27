@@ -66,6 +66,48 @@ public class ProiectPOO {
         generatoareElectrice.add(new GeneratorElectric("Parker", 3500, 23.0f, 5.5f, 6, 62.0f, "Motorina", 3));
         generatoareElectrice.add(new GeneratorElectric("Vanguard", 6500, 37.0f, 8.0f, 13, 72.0f, "Benzina", 4));
 
+        Vector<FierastrauPendular> fierastraiePendulare = new Vector<>();
+
+       
+        fierastraiePendulare.add(new FierastrauPendular("Bosch", 700, 2.5f, 3000, true, true, 80, "Curbă"));
+        fierastraiePendulare.add(new FierastrauPendular("Makita", 650, 2.2f, 2800, true, false, 75, "Dreaptă"));
+        fierastraiePendulare.add(new FierastrauPendular("DeWalt", 750, 2.8f, 3200, true, true, 85, "Mix"));
+        fierastraiePendulare.add(new FierastrauPendular("Black & Decker", 600, 2.1f, 2500, false, false, 70, "Curbă"));
+        fierastraiePendulare.add(new FierastrauPendular("Ryobi", 680, 2.3f, 2900, true, false, 78, "Dreaptă"));
+        fierastraiePendulare.add(new FierastrauPendular("Hitachi", 720, 2.4f, 3100, true, true, 82, "Mix"));
+        fierastraiePendulare.add(new FierastrauPendular("Einhell", 500, 2.0f, 2400, false, false, 65, "Curbă"));
+        fierastraiePendulare.add(new FierastrauPendular("Festool", 800, 3.0f, 3300, true, true, 88, "Mix"));
+        fierastraiePendulare.add(new FierastrauPendular("Metabo", 700, 2.5f, 3000, true, false, 80, "Dreaptă"));
+        fierastraiePendulare.add(new FierastrauPendular("Stanley", 600, 2.2f, 2600, false, false, 72, "Curbă"));
+        
+        
+        Vector<SurubelnitaElectrica> surubelnite = new Vector<>();
+
+        
+        surubelnite.add(new SurubelnitaElectrica("Bosch", 18, 1.5f, 2, 1.5f, 10.0f, "Baterie", true));
+        surubelnite.add(new SurubelnitaElectrica("Makita", 20, 1.6f, 3, 2.0f, 12.0f, "Baterie", false));
+        surubelnite.add(new SurubelnitaElectrica("DeWalt", 22, 1.7f, 2, 1.7f, 8.0f, "Cablu", true));
+        surubelnite.add(new SurubelnitaElectrica("Einhell", 15, 1.4f, 1, 1.0f, 6.0f, "Baterie", true));
+        surubelnite.add(new SurubelnitaElectrica("Black & Decker", 18, 1.8f, 2, 1.8f, 11.0f, "Cablu", false));
+        surubelnite.add(new SurubelnitaElectrica("Hitachi", 20, 2.0f, 3, 2.5f, 15.0f, "Baterie", true));
+        surubelnite.add(new SurubelnitaElectrica("Ryobi", 25, 1.9f, 2, 1.6f, 9.0f, "Cablu", false));
+        surubelnite.add(new SurubelnitaElectrica("Craftsman", 22, 1.7f, 1, 1.4f, 7.0f, "Baterie", true));
+        surubelnite.add(new SurubelnitaElectrica("Skil", 19, 1.6f, 3, 2.0f, 13.0f, "Cablu", true));
+        surubelnite.add(new SurubelnitaElectrica("Milwaukee", 30, 2.2f, 2, 2.0f, 14.0f, "Baterie", false));
+
+        
+        System.out.println("Surubelnite Electrice:");
+        for (SurubelnitaElectrica surubelnita : surubelnite) {
+            System.out.println(surubelnita);
+        }
+
+      
+        System.out.println("\nFierastraie pendulare:");
+        for (FierastrauPendular fierastrau : fierastraiePendulare) {
+            System.out.println(fierastrau);
+
+        
+
 
 
         // Afisarea instantelor pentru Polizor
