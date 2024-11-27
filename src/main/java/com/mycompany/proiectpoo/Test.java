@@ -11,7 +11,11 @@ package com.mycompany.proiectpoo;
 
  public class Test {
     public static void main(String[] args) {
-        
+     
+        SurubelnitaElectrica surubelnita1 = new SurubelnitaElectrica();
+        SurubelnitaElectrica surubelnita2 = new SurubelnitaElectrica("Bosch", 18, 1.5f, 2, 1.5f, 10.0f, "Baterie", true);
+        SurubelnitaElectrica surubelnita3 = new SurubelnitaElectrica(surubelnita2);
+     
         Polizor polizor1 = new Polizor();
         Polizor polizor2 = new Polizor("Bosch", 1500, 5.0f, 12000, 2000, 25.0f, "Diamantat", "Electric");
         Polizor polizor3 = new Polizor(polizor2);
@@ -27,6 +31,10 @@ package com.mycompany.proiectpoo;
         GeneratorElectric generator1 = new GeneratorElectric();
         GeneratorElectric generator2 = new GeneratorElectric("Honda", 3500, 45.0f, 15.0f, 8, 75.0f, "Benzină", 4);
         GeneratorElectric generator3 = new GeneratorElectric(generator2);
+
+        System.out.println("Surubelnita 1 (fara argumente): " + surubelnita1);
+        System.out.println("Surubelnita 2 (cu argumente): " + surubelnita2);
+        System.out.println("Surubelnita 3 (copiere): " + surubelnita3);
         
         System.out.println("Aparat de sudura:");
         System.out.println("Aparat 1 (Constructor fara argumente): " + aparat1);
