@@ -2,29 +2,81 @@ package com.mycompany.proiectpoo;
 
 
 public class Rotopercutor extends SculeElectrice {
-    private int percutiiPeMinut; // numarul de percutii pe minut
+    protected int percutiiPeMinut;
+    protected double energieImpact;
+    protected int adancimeMaxima;
+    protected boolean functieInversare;
+    protected String tipMandrina;
 
-    // Constructor fara argumente
     public Rotopercutor() {
         super();
         this.percutiiPeMinut = 0;
+        this.energieImpact = 0.0;
+        this.adancimeMaxima = 0;
+        this.functieInversare = false;
+        this.tipMandrina = "Necunoscut";
     }
 
-    // Constructor cu toate argumentele
-    public Rotopercutor(String firma, int putere, float greutate, int percutiiPeMinut) {
-        super(firma, putere, greutate);
+    public Rotopercutor(String marca, int putere, float greutate, int percutiiPeMinut, double energieImpact, int adancimeMaxima, boolean functieInversare, String tipMandrina) {
+        super(marca, putere, greutate);
+        this.percutiiPeMinut = percutiiPeMinut;
+        this.energieImpact = energieImpact;
+        this.adancimeMaxima = adancimeMaxima;
+        this.functieInversare = functieInversare;
+        this.tipMandrina = tipMandrina;
+    }
+
+    public Rotopercutor(Rotopercutor rotopercutor) {
+        super(rotopercutor);
+        this.percutiiPeMinut = rotopercutor.percutiiPeMinut;
+        this.energieImpact = rotopercutor.energieImpact;
+        this.adancimeMaxima = rotopercutor.adancimeMaxima;
+        this.functieInversare = rotopercutor.functieInversare;
+        this.tipMandrina = rotopercutor.tipMandrina;
+    }
+
+    public int getPercutiiPeMinut() {
+        return percutiiPeMinut;
+    }
+
+    public void setPercutiiPeMinut(int percutiiPeMinut) {
         this.percutiiPeMinut = percutiiPeMinut;
     }
 
-    // Constructor de copiere
-    public Rotopercutor(Rotopercutor other) {
-        super(other);
-        this.percutiiPeMinut = other.percutiiPeMinut;
+    public double getEnergieImpact() {
+        return energieImpact;
     }
 
-    // Metoda toString rescrisa
+    public void setEnergieImpact(double energieImpact) {
+        this.energieImpact = energieImpact;
+    }
+
+    public int getAdancimeMaxima() {
+        return adancimeMaxima;
+    }
+
+    public void setAdancimeMaxima(int adancimeMaxima) {
+        this.adancimeMaxima = adancimeMaxima;
+    }
+
+    public boolean isFunctieInversare() {
+        return functieInversare;
+    }
+
+    public void setFunctieInversare(boolean functieInversare) {
+        this.functieInversare = functieInversare;
+    }
+
+    public String getTipMandrina() {
+        return tipMandrina;
+    }
+
+    public void setTipMandrina(String tipMandrina) {
+        this.tipMandrina = tipMandrina;
+    }
+
+    @Override
     public String toString() {
-        return super.toString() + ", Percutii/min=" + percutiiPeMinut;
+        return super.toString() + ", PercutiiPeMinut=" + percutiiPeMinut + ", EnergieImpact=" + energieImpact + " J, AdancimeMaxima=" + adancimeMaxima + " mm, FunctieInversare=" + functieInversare + ", TipMandrina=" + tipMandrina;
     }
 }
-

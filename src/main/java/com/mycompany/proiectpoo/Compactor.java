@@ -2,28 +2,81 @@ package com.mycompany.proiectpoo;
 
 
 public class Compactor extends SculeElectrice {
-    private double fortaCompactare; // in kilograme-forta
+    protected double fortaCompactare;
+    protected int capacitateRezervor;
+    protected double latimeCompactare;
+    protected boolean motorizat;
+    protected String tipMotor;
 
-    // Constructor fara argumente
     public Compactor() {
         super();
-        this.fortaCompactare = 0.0f;
+        this.fortaCompactare = 0.0;
+        this.capacitateRezervor = 0;
+        this.latimeCompactare = 0.0;
+        this.motorizat = false;
+        this.tipMotor = "Necunoscut";
     }
 
-    // Constructor cu toate argumentele
-    public Compactor(String firma, int putere, float greutate, double fortaCompactare) {
-        super(firma, putere, greutate);
+    public Compactor(String marca, int putere, float greutate, double fortaCompactare, int capacitateRezervor, double latimeCompactare, boolean motorizat, String tipMotor) {
+        super(marca, putere, greutate);
+        this.fortaCompactare = fortaCompactare;
+        this.capacitateRezervor = capacitateRezervor;
+        this.latimeCompactare = latimeCompactare;
+        this.motorizat = motorizat;
+        this.tipMotor = tipMotor;
+    }
+
+    public Compactor(Compactor compactor) {
+        super(compactor);
+        this.fortaCompactare = compactor.fortaCompactare;
+        this.capacitateRezervor = compactor.capacitateRezervor;
+        this.latimeCompactare = compactor.latimeCompactare;
+        this.motorizat = compactor.motorizat;
+        this.tipMotor = compactor.tipMotor;
+    }
+
+    public double getFortaCompactare() {
+        return fortaCompactare;
+    }
+
+    public void setFortaCompactare(double fortaCompactare) {
         this.fortaCompactare = fortaCompactare;
     }
 
-    // Constructor de copiere
-    public Compactor(Compactor other) {
-        super(other);
-        this.fortaCompactare = other.fortaCompactare;
+    public int getCapacitateRezervor() {
+        return capacitateRezervor;
     }
 
-    // Metoda toString rescrisa
+    public void setCapacitateRezervor(int capacitateRezervor) {
+        this.capacitateRezervor = capacitateRezervor;
+    }
+
+    public double getLatimeCompactare() {
+        return latimeCompactare;
+    }
+
+    public void setLatimeCompactare(double latimeCompactare) {
+        this.latimeCompactare = latimeCompactare;
+    }
+
+    public boolean isMotorizat() {
+        return motorizat;
+    }
+
+    public void setMotorizat(boolean motorizat) {
+        this.motorizat = motorizat;
+    }
+
+    public String getTipMotor() {
+        return tipMotor;
+    }
+
+    public void setTipMotor(String tipMotor) {
+        this.tipMotor = tipMotor;
+    }
+
+    @Override
     public String toString() {
-        return super.toString() + ", FortaCompactare=" + fortaCompactare + " kgf";
+        return super.toString() + ", FortaCompactare=" + fortaCompactare + " kgf, CapacitateRezervor=" + capacitateRezervor + " L, LatimeCompactare=" + latimeCompactare + " m, Motorizat=" + motorizat + ", TipMotor=" + tipMotor;
     }
 }

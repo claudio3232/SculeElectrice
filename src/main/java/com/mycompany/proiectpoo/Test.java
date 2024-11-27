@@ -44,6 +44,15 @@ package com.mycompany.proiectpoo;
         PolizorUnghiular polizorU2 = new PolizorUnghiular("Makita", 750, 3.2f, "Ergonomic", 125, 11000, true);
         PolizorUnghiular polizorU3 = new PolizorUnghiular(polizorU2);
         
+        Rotopercutor roto1 = new Rotopercutor(); 
+        Rotopercutor roto2 = new Rotopercutor("Bosch", 800, 3.5f, 3500, 2.5, 50, true, "SDS"); 
+        Rotopercutor roto3 = new Rotopercutor(roto2); 
+
+        Compactor comp1 = new Compactor(); 
+        Compactor comp2 = new Compactor("Caterpillar", 1200, 100.0f, 600.0, 15, 2.0, true, "Diesel"); 
+        Compactor comp3 = new Compactor(comp2);
+        
+        
         System.out.println("Polizor unghiular: ");
         System.out.println("Polizor 1 (Constructor fara argumente): " + polizorU1.toString());
         System.out.println("Polizor 2 (Constructor cu argumente): " + polizorU2.toString());
@@ -64,24 +73,34 @@ package com.mycompany.proiectpoo;
         System.out.println("Surubelnita 2 (cu argumente): " + surubelnita2);
         System.out.println("Surubelnita 3 (copiere): " + surubelnita3);
         
-        System.out.println("\nAparat de sudura:");
+        System.out.println("\nAparat de sudura: ");
         System.out.println("Aparat 1 (Constructor fara argumente): " + aparat1);
         System.out.println("Aaparat 2 (Constructor cu argumente): " + aparat2);
         System.out.println("Aparat 3 (Constructor de copiere): " + aparat3);
         
-        System.out.println("\nGenerator Electric:");
-        System.out.println("Generator1 (Constructor fara argumente): " + generator1);
+        System.out.println("\nGenerator Electric: ");
+        System.out.println("Generator 1 (Constructor fara argumente): " + generator1);
         System.out.println("Generator 2 (Constructor cu argumente): " + generator2);
         System.out.println("Generator 3 (Constructor de copiere): " + generator3);
         
-        System.out.println("\nPolizoare:");
+        System.out.println("\nPolizoare: ");
         System.out.println("Polizor 1 (Constructor fara argumente): " + polizor1);
         System.out.println("Polizor 2 (Constructor cu argumente): " + polizor2);
         System.out.println("Polizor 3 (Constructor de copiere): " + polizor3);
 
-        System.out.println("\nSlefuitoare:");
+        System.out.println("\nSlefuitoare: ");
         System.out.println("Slefuitor 1 (Constructor fara argumente): " + slefuitor1);
         System.out.println("Slefuitor 2 (Constructor cu argumente): " + slefuitor2);
         System.out.println("Slefuitor 3 (Constructor de copiere): " + slefuitor3);
+        
+        System.out.println("\nRotopercutoare: ");
+        System.out.println("Rotopercurtor 1 (Constructor fara argumente): " + roto1);
+        System.out.println("Rotopercurtor 2 (Constructor cu argumente): " + roto2);
+        System.out.println("Rotopercurtor 3 (Constructor de copiere): " + roto3);
+        
+        System.out.println("Compactoare:");
+        System.out.println("Compactor 1 (Constructor fara argumente): " + comp1);
+        System.out.println("Compactor 2 (Constructor cu argumente): " + comp2);
+        System.out.println("Compactor 3 (Constructor de copiere): " + comp3);
     }
 }

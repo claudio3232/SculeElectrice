@@ -112,6 +112,33 @@ public class ProiectPOO {
         surubelnite.add(new SurubelnitaElectrica("Milwaukee", 30, 2.2f, 2, 2.0f, 14.0f, "Baterie", false));
         
         
+        Vector<Rotopercutor> vectorRotopercutoare = new Vector<>();
+        
+        vectorRotopercutoare.add(new Rotopercutor("Bosch", 800, 3.5f, 3500, 2.5, 50, true, "SDS"));
+        vectorRotopercutoare.add(new Rotopercutor("Makita", 900, 4.0f, 3600, 3.0, 60, false, "Hex"));
+        vectorRotopercutoare.add(new Rotopercutor("DeWalt", 850, 3.8f, 3400, 2.8, 55, true, "SDS Max"));
+        vectorRotopercutoare.add(new Rotopercutor("Hilti", 950, 4.2f, 3700, 3.5, 65, false, "QuickLock"));
+        vectorRotopercutoare.add(new Rotopercutor("AEG", 780, 3.3f, 3300, 2.3, 45, true, "Universal"));
+        vectorRotopercutoare.add(new Rotopercutor("Metabo", 820, 3.6f, 3500, 2.7, 52, false, "SDS Plus"));
+        vectorRotopercutoare.add(new Rotopercutor("Ryobi", 870, 4.1f, 3650, 3.1, 58, true, "TwistLock"));
+        vectorRotopercutoare.add(new Rotopercutor("Festool", 880, 4.3f, 3750, 3.6, 68, false, "ClampLock"));
+        vectorRotopercutoare.add(new Rotopercutor("Einhell", 740, 3.1f, 3200, 2.0, 42, true, "ThreadLock"));
+        vectorRotopercutoare.add(new Rotopercutor("Black+Decker", 770, 3.2f, 3250, 2.2, 44, false, "Standard"));
+        
+        
+        Vector<Compactor> vectorCompactoare = new Vector<>();
+        
+        vectorCompactoare.add(new Compactor("Caterpillar", 1200, 100.0f, 600.0, 15, 2.0, true, "Diesel"));
+        vectorCompactoare.add(new Compactor("Dynapac", 1250, 105.0f, 650.0, 16, 2.2, false, "Electric"));
+        vectorCompactoare.add(new Compactor("Bomag", 1300, 110.0f, 700.0, 18, 2.5, true, "Hydraulic"));
+        vectorCompactoare.add(new Compactor("Hamm", 1350, 115.0f, 750.0, 20, 2.8, false, "Pneumatic"));
+        vectorCompactoare.add(new Compactor("Volvo", 1400, 120.0f, 800.0, 22, 3.0, true, "Gasoline"));
+        vectorCompactoare.add(new Compactor("Wacker Neuson", 1450, 125.0f, 850.0, 24, 3.2, false, "Propane"));
+        vectorCompactoare.add(new Compactor("JCB", 1500, 130.0f, 900.0, 26, 3.5, true, "Diesel"));
+        vectorCompactoare.add(new Compactor("Case", 1550, 135.0f, 950.0, 28, 3.8, false, "Electric"));
+        vectorCompactoare.add(new Compactor("Hitachi", 1600, 140.0f, 1000.0, 30, 4.0, true, "Hydraulic"));
+        vectorCompactoare.add(new Compactor("Komatsu", 1650, 145.0f, 1050.0, 32, 4.2, false, "Pneumatic"));
+
 
         System.out.println("Polizoare:");
         for (Polizor polizor : polizoare) {
@@ -152,7 +179,15 @@ public class ProiectPOO {
             System.out.println(surubelnita);
         }
 
+        System.out.println("Vector Rotopercutoare:");
+        for (Rotopercutor roto : vectorRotopercutoare) {
+            System.out.println(roto);
+        }
         
+        System.out.println("\nVector Compactoare:");
+        for (Compactor comp : vectorCompactoare) {
+            System.out.println(comp);
+        }
     }
 }
        
