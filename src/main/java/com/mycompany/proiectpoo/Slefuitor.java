@@ -64,7 +64,7 @@ class Slefuitor extends SculeElectrice {
                 "Perioada de garantie: " + garantie + " luni";
     }
 
-    // Getters și Setters
+    // Getteri si Setteri
     public float getDimensiuneDisc() {
         return dimensiuneDisc;
     }
