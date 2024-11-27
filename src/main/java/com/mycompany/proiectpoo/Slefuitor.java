@@ -46,15 +46,6 @@ class Slefuitor extends SculeElectrice {
         this.garantie = slefuitor.garantie;
     }
 
-    // Implementarea metodei abstracte
-    public String specificatii() {
-        return "Slefuitor cu dimensiunea discului de " + dimensiuneDisc + " mm, " +
-               "uz profesional: " + (esteProfesional ? "Da" : "Nu") + ", " +
-               "viteza variabilă: " + (vitezaVariabila ? "Da" : "Nu") + ", " +
-               "destinat pentru suprafata: " + tipSuprafata + ", " +
-               "garantie: " + garantie + " luni.";
-    }
-
     // Metoda toString
     public String toString() {
         return super.toString() + ", Dimensiunea discului: " + dimensiuneDisc + " mm, " + 
