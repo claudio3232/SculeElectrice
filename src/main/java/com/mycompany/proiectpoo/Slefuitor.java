@@ -8,10 +8,13 @@ package com.mycompany.proiectpoo;
  *
  * @author nechi
  */
+
 class Slefuitor extends SculeElectrice {
     private float dimensiuneDisc; // in mm
     private boolean esteProfesional; // Indica daca slefuitorul este destinat uzului profesional
     private boolean vitezaVariabila; // Indica daca slefuitorul are viteza variabila
+    private String tipSuprafata; // Tipul suprafetei pentru care este destinat slefuitorul (lemn, metal, piatra)
+    private int garantie; // Perioada de garantie in luni
     
     // Constructor fara argumente
     public Slefuitor() {
@@ -19,14 +22,18 @@ class Slefuitor extends SculeElectrice {
         this.dimensiuneDisc = 0.0f;
         this.esteProfesional = false;
         this.vitezaVariabila = false;
+        this.tipSuprafata = "Necunoscut";
+        this.garantie = 0;
     }
 
     // Constructor cu toate argumentele
-    public Slefuitor(String firma, int putere, float greutate, float dimensiuneDisc,  boolean esteProfesional, boolean vitezaVariabila) {
+    public Slefuitor(String firma, int putere, float greutate, float dimensiuneDisc, boolean esteProfesional, boolean vitezaVariabila, String tipSuprafata, int garantie) {
         super(firma, putere, greutate);
         this.dimensiuneDisc = dimensiuneDisc;
         this.esteProfesional = esteProfesional;
         this.vitezaVariabila = vitezaVariabila;
+        this.tipSuprafata = tipSuprafata;
+        this.garantie = garantie;
     }
 
     // Constructor de copiere
@@ -35,20 +42,67 @@ class Slefuitor extends SculeElectrice {
         this.dimensiuneDisc = slefuitor.dimensiuneDisc;
         this.esteProfesional = slefuitor.esteProfesional;
         this.vitezaVariabila = slefuitor.vitezaVariabila;
+        this.tipSuprafata = slefuitor.tipSuprafata;
+        this.garantie = slefuitor.garantie;
     }
-    
+
     // Implementarea metodei abstracte
-    @Override
     public String specificatii() {
         return "Slefuitor cu dimensiunea discului de " + dimensiuneDisc + " mm, " +
                "uz profesional: " + (esteProfesional ? "Da" : "Nu") + ", " +
-               "viteza variabilă: " + (vitezaVariabila ? "Da" : "Nu") + ".";
+               "viteza variabilă: " + (vitezaVariabila ? "Da" : "Nu") + ", " +
+               "destinat pentru suprafata: " + tipSuprafata + ", " +
+               "garantie: " + garantie + " luni.";
     }
-    
+
     // Metoda toString
     public String toString() {
         return super.toString() + ", Dimensiunea discului: " + dimensiuneDisc + " mm, " + 
                 "Este profesional: " + (esteProfesional ? "Da" : "Nu") + ", "
-                + "Viteza variabila: " + (vitezaVariabila ? "Da" : "Nu");
+                + "Viteza variabila: " + (vitezaVariabila ? "Da" : "Nu") + ", "
+                + "Tip suprafata: " + tipSuprafata + ", " +
+                "Perioada de garantie: " + garantie + " luni";
+    }
+
+    // Getters și Setters
+    public float getDimensiuneDisc() {
+        return dimensiuneDisc;
+    }
+
+    public void setDimensiuneDisc(float dimensiuneDisc) {
+        this.dimensiuneDisc = dimensiuneDisc;
+    }
+
+    public boolean isEsteProfesional() {
+        return esteProfesional;
+    }
+
+    public void setEsteProfesional(boolean esteProfesional) {
+        this.esteProfesional = esteProfesional;
+    }
+
+    public boolean isVitezaVariabila() {
+        return vitezaVariabila;
+    }
+
+    public void setVitezaVariabila(boolean vitezaVariabila) {
+        this.vitezaVariabila = vitezaVariabila;
+    }
+
+    public String getTipSuprafata() {
+        return tipSuprafata;
+    }
+
+    public void setTipSuprafata(String tipSuprafata) {
+        this.tipSuprafata = tipSuprafata;
+    }
+
+    public int getGarantie() {
+        return garantie;
+    }
+
+    public void setGarantie(int garantie) {
+        this.garantie = garantie;
     }
 }
+
