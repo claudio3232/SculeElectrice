@@ -10,7 +10,7 @@ package com.mycompany.proiectpoo;
  */
 
 public class MasinaGaurit extends SculeElectrice {
-    private int numarPercutii; // numarul de percutii pe minut
+    private long numarPercutii; // numarul de percutii pe minut
 
     // Constructor fara argumente
     public MasinaGaurit() {
@@ -19,7 +19,7 @@ public class MasinaGaurit extends SculeElectrice {
     }
 
     // Constructor cu toate argumentele
-    public MasinaGaurit(String firma, int putere, float greutate, int numarPercutii) {
+    public MasinaGaurit(String firma, int putere, float greutate, long numarPercutii) {
         super(firma, putere, greutate);
         this.numarPercutii = numarPercutii;
     }

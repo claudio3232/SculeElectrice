@@ -12,8 +12,8 @@ package com.mycompany.proiectpoo;
 public class ProiectPOO {
     public static void main(String[] args) {
         // Crearea obiectelor
-        Polizor polizor = new Polizor("Hecht", 1700, 8.2f, 2950);
-        Slefuitor slefuitor = new Slefuitor("Makita", 190, 1.6f, 150.0f);
+        Polizor polizor = new Polizor("Hecht", 1700, 8.2f, 2950, 1500, 23.5f);
+        Slefuitor slefuitor = new Slefuitor("Makita", 190, 1.6f, 150.0f, true, false);
         FierastrauPendular fierastrau = new FierastrauPendular("Bosch", 650, 2.3f, 3000);
         SurubelnitaElectrica surubelnita = new SurubelnitaElectrica("SKIL", 400, 1.5f, 1500);
         PolizorUnghiular polizorUng = new PolizorUnghiular("Adler", 840, 5.2f, "manerScurt");
