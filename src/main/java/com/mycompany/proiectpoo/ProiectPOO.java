@@ -95,7 +95,17 @@ public class ProiectPOO {
         surubelnite.add(new SurubelnitaElectrica("Skil", 19, 1.6f, 3, 2.0f, 13.0f, "Cablu", true));
         surubelnite.add(new SurubelnitaElectrica("Milwaukee", 30, 2.2f, 2, 2.0f, 14.0f, "Baterie", false));
 
-        
+        System.out.println("Aparat de sudura:");
+        for (AparatDeSudura aparat : aparateSudura) 
+            {
+            System.out.println(aparat);
+            }
+        System.out.println("Generator electric:");
+         for (GeneratorElectric generator : generatoareElectrice) 
+            {
+            System.out.println(generator);
+            }   
+         
         System.out.println("Surubelnite Electrice:");
         for (SurubelnitaElectrica surubelnita : surubelnite) {
             System.out.println(surubelnita);
