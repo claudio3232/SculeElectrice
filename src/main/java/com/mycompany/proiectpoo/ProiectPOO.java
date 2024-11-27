@@ -12,6 +12,16 @@ import java.util.Vector;
 
 public class ProiectPOO {
     public static void main(String[] args) {
+        
+        
+        SculeElectrice scula = new SculeElectrice("Bosch", 500, 2.5f);
+        PolizorUnghiular polizor = new PolizorUnghiular("Makita", 750, 3.2f, "Ergonomic", 125, 11000, true);
+        MasinaGaurit masina = new MasinaGaurit("DeWalt", 600, 2.8f, 45000,true, 16, "Automat");
+        // Afisare detalii
+        System.out.println(scula.toString());
+        System.out.println(polizor.toString());
+        System.out.println(masina.toString());
+        
         // Crearea unui vector cu instante Polizor
         Vector<Polizor> polizoare = new Vector<>();
 
@@ -94,6 +104,26 @@ public class ProiectPOO {
         surubelnite.add(new SurubelnitaElectrica("Craftsman", 22, 1.7f, 1, 1.4f, 7.0f, "Baterie", true));
         surubelnite.add(new SurubelnitaElectrica("Skil", 19, 1.6f, 3, 2.0f, 13.0f, "Cablu", true));
         surubelnite.add(new SurubelnitaElectrica("Milwaukee", 30, 2.2f, 2, 2.0f, 14.0f, "Baterie", false));
+        
+        Vector<PolizorUnghiular> polizoare = new Vector<>();
+        
+        polizoare.add(new PolizorUnghiular("Bosch", 1500, 5.0f, "Ergonomic", 125, 12000, true));
+        polizoare.add(new PolizorUnghiular("Makita", 1700, 5.4f, "Fix", 130, 12500, false));
+        polizoare.add(new PolizorUnghiular("DeWalt", 1900, 5.8f, "Pivotant", 135, 13000, true));
+        polizoare.add(new PolizorUnghiular("Hilti", 2100, 6.0f, "Ergonomic", 140, 13500, false));
+        polizoare.add(new PolizorUnghiular("Black+Decker", 2200, 6.2f, "Fix", 145, 14000, true));
+        polizoare.add(new PolizorUnghiular("Ryobi", 2300, 6.4f, "Pivotant", 150, 14500, false));
+        polizoare.add(new PolizorUnghiular("Craftsman", 2400, 6.6f, "Ergonomic", 155, 15000, true));
+        polizoare.add(new PolizorUnghiular("Hitachi", 2500, 6.8f, "Fix", 160, 15500, false));
+        polizoare.add(new PolizorUnghiular("Einhell", 2600, 7.0f, "Pivotant", 165, 16000, true));
+        polizoare.add(new PolizorUnghiular("Skil", 2700, 7.2f, "Ergonomic", 170, 16500, false));
+        
+        System.out.println("Polizoare:");
+        for (PolizorUnghiular objpolizor : polizoare) {
+            System.out.println(polizor);
+        }
+    
+
 
         System.out.println("Aparat de sudura:");
         for (AparatDeSudura aparat : aparateSudura) 
@@ -116,10 +146,6 @@ public class ProiectPOO {
         for (FierastrauPendular fierastrau : fierastraiePendulare) {
             System.out.println(fierastrau);
         }
-
-        
-
-
 
         // Afisarea instantelor pentru Polizor
         System.out.println("Polizoare:");
