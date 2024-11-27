@@ -8,7 +8,7 @@ package com.mycompany.proiectpoo;
  *
  * @author nechi
  */
-    public class SculeElectrice {
+    public class SculeElectrice implements Scule {
     protected String firma;
     protected int putere;  // in wati
     protected float greutate; // in kilograme
@@ -33,10 +33,21 @@ package com.mycompany.proiectpoo;
         this.putere = scula.putere;
         this.greutate = scula.greutate;
     }
-
+   public void functioneza(){
+        System.out.println("DA");
+    }
+    @Override
+    public String afiseazaDetalii(){
+        return "Informatii";
+    }
     // Metoda toString
     @Override
     public String toString() {
-        return getClass().getSimpleName() + " [Firma: " + firma + ", Putere: " + putere + "W, Greutate: " + greutate + " kg]";
+        return "SculeElectrice [Firma: " + firma + ", Putere: " + putere + "W, Greutate: " + greutate + " kg]";
+    }
+
+    @Override
+    public void functioneaza() {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
