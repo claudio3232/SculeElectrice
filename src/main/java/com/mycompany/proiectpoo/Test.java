@@ -32,6 +32,14 @@ package com.mycompany.proiectpoo;
         GeneratorElectric generator2 = new GeneratorElectric("Honda", 3500, 45.0f, 15.0f, 8, 75.0f, "Benzină", 4);
         GeneratorElectric generator3 = new GeneratorElectric(generator2);
 
+        FierastrauPendular fierastrau1 = new FierastrauPendular();
+        FierastrauPendular fierastrau2 = new FierastrauPendular("Bosch", 1200, 3.5f, 5000, true, true, 85, "Curba");
+        FierastrauPendular fierastrau3 = new FierastrauPendular(fierastrau2);
+        
+        System.out.println("Fierastrau 1 (Constructor fara argumente): " + fierastrau1);
+        System.out.println("Fierastrau 2 (Constructor cu argumente): " + fierastrau2);
+        System.out.println("Fierastrau 3 (Constructor de copiere): " + fierastrau3);
+
         System.out.println("Surubelnita 1 (fara argumente): " + surubelnita1);
         System.out.println("Surubelnita 2 (cu argumente): " + surubelnita2);
         System.out.println("Surubelnita 3 (copiere): " + surubelnita3);
