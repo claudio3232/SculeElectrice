@@ -113,8 +113,6 @@ public class ProiectPOO {
         
         
 
-
- 
         System.out.println("Polizoare:");
         for (Polizor polizor : polizoare) {
             System.out.println(polizor);
@@ -153,9 +151,6 @@ public class ProiectPOO {
         for (SurubelnitaElectrica surubelnita : surubelnite) {
             System.out.println(surubelnita);
         }
-
-
-       
 
         
     }
