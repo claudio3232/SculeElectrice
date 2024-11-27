@@ -12,16 +12,6 @@ import java.util.Vector;
 
 public class ProiectPOO {
     public static void main(String[] args) {
-        
-        
-        SculeElectrice scula = new SculeElectrice("Bosch", 500, 2.5f);
-        PolizorUnghiular polizor = new PolizorUnghiular("Makita", 750, 3.2f, "Ergonomic", 125, 11000, true);
-        MasinaGaurit masina = new MasinaGaurit("DeWalt", 600, 2.8f, 45000,true, 16, "Automat");
-        // Afisare detalii
-        System.out.println(scula.toString());
-        System.out.println(polizor.toString());
-        System.out.println(masina.toString());
-        
         // Crearea unui vector cu instante Polizor
         Vector<Polizor> polizoare = new Vector<>();
 
@@ -120,6 +110,7 @@ public class ProiectPOO {
         
         System.out.println("Polizoare:");
         for (PolizorUnghiular objpolizor : polizoareU) {
+            boolean polizor = false;
             System.out.println(polizor);
         }
     
