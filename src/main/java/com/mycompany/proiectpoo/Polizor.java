@@ -12,9 +12,9 @@ package com.mycompany.proiectpoo;
 class Polizor extends SculeElectrice {
     private int turatiiMaxime; // (RPM)
     int putereaMotorului; // Puterea motorului in wati
-    float diametrulDiscului; // Diametrul discului in centimetri
-    private String tipDisc; // Tipul discului (ex. diamantat, metalic)
-    private String tipAlimentare; // Tipul de alimentare (electric, pe baterie)
+    float diametrulDiscului;
+    private String tipDisc; //(diamantat, metalic)
+    private String tipAlimentare; //(electric, pe baterie)
     
     // Constructor fara argumente
     public Polizor() {
