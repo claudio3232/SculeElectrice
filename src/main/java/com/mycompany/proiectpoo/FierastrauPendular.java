@@ -1,7 +1,7 @@
 package com.mycompany.proiectpoo;
 
 /**
- * Clasa FierastrauPendular derivată din SculeElectrice.
+ * Clasa FierastrauPendular derivata din SculeElectrice.
  */
 public class FierastrauPendular extends SculeElectrice {
     protected int vitezaTaiere;         // Viteza de tăiere (RPM)
@@ -10,7 +10,7 @@ public class FierastrauPendular extends SculeElectrice {
     protected int nivelZgomot;         // Nivelul de zgomot (dB)
     protected String tipTaiere;        // Tipul de tăiere suportat
 
-    // Constructor fără argumente
+    // Constructor fara argumente
     public FierastrauPendular() {
         super();
         this.vitezaTaiere = 0;
@@ -41,7 +41,7 @@ public class FierastrauPendular extends SculeElectrice {
         this.tipTaiere = fierastrau.tipTaiere;
     }
 
-    // Getter și setter pentru fiecare atribut
+    // Getter si setter pentru fiecare atribut
     public int getVitezaTaiere() {
         return vitezaTaiere;
     }
