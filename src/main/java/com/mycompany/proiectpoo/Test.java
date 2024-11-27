@@ -11,23 +11,20 @@ package com.mycompany.proiectpoo;
 
  public class Test {
     public static void main(String[] args) {
-        // Crearea instantelor pentru clasa Polizor folosind toti constructorii
-        Polizor polizor1 = new Polizor(); // Constructor fara argumente
-        Polizor polizor2 = new Polizor("Bosch", 1500, 5.0f, 12000, 2000, 25.0f, "Diamantat", "Electric"); // Constructor cu argumente
-        Polizor polizor3 = new Polizor(polizor2); // Constructor de copiere
         
-        // Crearea instantelor pentru clasa Slefuitor folosind toti constructorii
-        Slefuitor slefuitor1 = new Slefuitor(); // Constructor fara argumente
-        Slefuitor slefuitor2 = new Slefuitor("Makita", 900, 2.8f, 130.0f, false, true, "Metal", 36); // Constructor cu argumente
-        Slefuitor slefuitor3 = new Slefuitor(slefuitor2); // Constructor de copiere
+        Polizor polizor1 = new Polizor();
+        Polizor polizor2 = new Polizor("Bosch", 1500, 5.0f, 12000, 2000, 25.0f, "Diamantat", "Electric");
+        Polizor polizor3 = new Polizor(polizor2);
+      
+        Slefuitor slefuitor1 = new Slefuitor();
+        Slefuitor slefuitor2 = new Slefuitor("Makita", 900, 2.8f, 130.0f, false, true, "Metal", 36);
+        Slefuitor slefuitor3 = new Slefuitor(slefuitor2);
 
-        // Afisarea datelor pentru Polizor
         System.out.println("Polizoare:");
         System.out.println("Polizor 1 (Constructor fara argumente): " + polizor1);
         System.out.println("Polizor 2 (Constructor cu argumente): " + polizor2);
         System.out.println("Polizor 3 (Constructor de copiere): " + polizor3);
 
-        // Afisarea datelor pentru Slefuitor
         System.out.println("\nSlefuitoare:");
         System.out.println("Slefuitor 1 (Constructor fara argumente): " + slefuitor1);
         System.out.println("Slefuitor 2 (Constructor cu argumente): " + slefuitor2);
