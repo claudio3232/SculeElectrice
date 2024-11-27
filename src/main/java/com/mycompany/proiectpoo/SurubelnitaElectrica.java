@@ -1,7 +1,7 @@
 package com.mycompany.proiectpoo;
 
 /**
- * Clasa SurubelnitaElectrica derivată din SculeElectrice.
+ * Clasa SurubelnitaElectrica derivata din SculeElectrice.
  */
 public class SurubelnitaElectrica extends SculeElectrice {
     protected int nrviteze;          // Număr de viteze
@@ -10,7 +10,7 @@ public class SurubelnitaElectrica extends SculeElectrice {
     protected String tipAlimentare; // Tip alimentare (ex.: Baterie, Cablu)
     protected boolean luminaLed;    // Are lumină LED?
 
-    // Constructor fără argumente
+    // Constructor fara argumente
     public SurubelnitaElectrica() {
         super();
         this.nrviteze = 0;
@@ -41,7 +41,7 @@ public class SurubelnitaElectrica extends SculeElectrice {
         this.luminaLed = surubelnita.luminaLed;
     }
 
-    // Getteri și setteri
+    // Getteri si setteri
     public int getNrviteze() {
         return nrviteze;
     }
@@ -83,14 +83,5 @@ public class SurubelnitaElectrica extends SculeElectrice {
         return super.toString() + ", Numar viteze: " + nrviteze + ", Timp incarcare: " + timpIncarcare + 
                " ore, Autonomie: " + autonomie + " ore, Tip alimentare: " + tipAlimentare + 
                ", Lumina LED: " + (luminaLed ? "Da" : "Nu");
-    }
-
-  
-
-       
-    public String toString() {
-        return super.toString() + ", Numar viteza: " + nrviteze + " trepte, " +
-                "cu autonomie de: " + autonomie + " ore, " +
-                "si tip de alimentare cu: " + tipAlimentare;
     }
 }
