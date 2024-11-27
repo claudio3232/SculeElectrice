@@ -36,6 +36,25 @@ package com.mycompany.proiectpoo;
         FierastrauPendular fierastrau2 = new FierastrauPendular("Bosch", 1200, 3.5f, 5000, true, true, 85, "Curba");
         FierastrauPendular fierastrau3 = new FierastrauPendular(fierastrau2);
         
+        System.out.println("\nTestare MasinaGaurit:");
+        MasinaGaurit masina1 = new MasinaGaurit();
+        MasinaGaurit masina2 = new MasinaGaurit("DeWalt", 600, 2.8f, 45000,true, 16, "Automat");
+        MasinaGaurit masina3 = new MasinaGaurit(masina2);
+        
+        System.out.println("\nTestare PolizorUnghiular:");
+        PolizorUnghiular polizorU1 = new PolizorUnghiular();
+        PolizorUnghiular polizorU2 = new PolizorUnghiular("Makita", 750, 3.2f, "Ergonomic", 125, 11000, true);
+        PolizorUnghiular polizorU3 = new PolizorUnghiular(polizorU2);
+        
+        System.out.println(polizorU1.toString());
+        System.out.println(polizorU2.toString());
+        System.out.println(polizorU3.toString());
+        
+        System.out.println(masina1.toString());
+        System.out.println(masina2.toString());
+        System.out.println(masina3.toString());
+
+        
         System.out.println("Fierastrau 1 (Constructor fara argumente): " + fierastrau1);
         System.out.println("Fierastrau 2 (Constructor cu argumente): " + fierastrau2);
         System.out.println("Fierastrau 3 (Constructor de copiere): " + fierastrau3);
