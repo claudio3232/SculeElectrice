@@ -41,6 +41,32 @@ public class ProiectPOO {
         slefuitoare.add(new Slefuitor("Hitachi", 1500, 4.0f, 160.0f, false, true, "Metal", 24));
         slefuitoare.add(new Slefuitor("Einhell", 1600, 4.2f, 165.0f, true, false, "Piatra", 36));
         slefuitoare.add(new Slefuitor("Skil", 1700, 4.4f, 170.0f, true, true, "Lemn", 18));
+        
+        Vector<AparatDeSudura> aparateSudura = new Vector<>();
+        aparateSudura.add(new AparatDeSudura("Makita", 2000, 5.5f, "Electrod de inox", 6.0f, 3, "Curent continuu", 85.5f));
+        aparateSudura.add(new AparatDeSudura("Bosch", 2500, 6.0f, "Electrod bazic", 5.0f, 4, "Curent alternativ", 80.0f));
+        aparateSudura.add(new AparatDeSudura("DeWalt", 1800, 4.8f, "Electrod rutilic", 4.5f, 2, "Curent continuu", 90.0f));
+        aparateSudura.add(new AparatDeSudura("Einhell", 2200, 6.5f, "Electrod acid", 5.5f, 3, "Curent alternativ", 88.0f));
+        aparateSudura.add(new AparatDeSudura("Hitachi", 2100, 5.0f, "Electrod de inox", 5.0f, 4, "Curent continuu", 82.5f));
+        aparateSudura.add(new AparatDeSudura("Makita", 2300, 5.3f, "Electrod rutilic", 6.0f, 5, "Curent alternativ", 83.0f));
+        aparateSudura.add(new AparatDeSudura("Hilti", 2400, 6.2f, "Electrod bazic", 7.0f, 2, "Curent continuu", 86.0f));
+        aparateSudura.add(new AparatDeSudura("Black & Decker", 2000, 5.0f, "Electrod acid", 4.0f, 3, "Curent alternativ", 81.0f));
+        aparateSudura.add(new AparatDeSudura("Bosch", 2600, 6.8f, "Electrod de inox", 6.5f, 6, "Curent continuu", 89.5f));
+        aparateSudura.add(new AparatDeSudura("Makita", 2200, 5.2f, "Electrod rutilic", 5.0f, 4, "Curent alternativ", 84.0f));
+        
+         Vector<GeneratorElectric> generatoareElectrice = new Vector<>();
+        generatoareElectrice.add(new GeneratorElectric("Honda", 5000, 30.0f, 7.5f, 10, 65.0f, "Benzina", 4));
+        generatoareElectrice.add(new GeneratorElectric("Yamaha", 4000, 25.0f, 6.0f, 8, 60.0f, "Motorina", 3));
+        generatoareElectrice.add(new GeneratorElectric("Generac", 5500, 32.0f, 8.0f, 12, 70.0f, "Benzina", 5));
+        generatoareElectrice.add(new GeneratorElectric("Kipor", 3000, 22.5f, 5.0f, 6, 55.0f, "Motorina", 2));
+        generatoareElectrice.add(new GeneratorElectric("Briggs & Stratton", 4500, 28.0f, 6.5f, 9, 68.0f, "Benzina", 4));
+        generatoareElectrice.add(new GeneratorElectric("Loncin", 3800, 27.0f, 5.5f, 7, 64.0f, "Motorina", 3));
+        generatoareElectrice.add(new GeneratorElectric("Powerhorse", 6000, 35.0f, 8.5f, 15, 75.0f, "Benzina", 6));
+        generatoareElectrice.add(new GeneratorElectric("Honda", 7000, 40.0f, 9.0f, 18, 80.0f, "Benzina", 5));
+        generatoareElectrice.add(new GeneratorElectric("Parker", 3500, 23.0f, 5.5f, 6, 62.0f, "Motorina", 3));
+        generatoareElectrice.add(new GeneratorElectric("Vanguard", 6500, 37.0f, 8.0f, 13, 72.0f, "Benzina", 4));
+
+
 
         // Afisarea instantelor pentru Polizor
         System.out.println("Polizoare:");
