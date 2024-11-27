@@ -11,27 +11,41 @@ package com.mycompany.proiectpoo;
 
 public class PolizorUnghiular extends SculeElectrice {
     private String tipManer; // Tipul manerului (ergonomic, fix, pivotant)
+    private int diametruDisc; // Diametrul discului în mm
+    private int turatieMaxima; // Turația maximă în rotații pe minut (RPM)
+    private boolean protectieSupraIncalzire; // Dacă are protecție la supraîncălzire
+
 
     // Constructor fara argumente
     public PolizorUnghiular() {
         super();
         this.tipManer = "Necunoscut";
+        this.diametruDisc = 0;
+        this.turatieMaxima = 0;
+        this.protectieSupraIncalzire = false;
     }
 
     // Constructor cu toate argumentele
-    public PolizorUnghiular(String firma, int putere, float greutate, String tipManer) {
+    public PolizorUnghiular(String firma, int putere, float greutate, String tipManer,int diametruDisc, int turatieMaxima, boolean protectieSupraIncalzire) {
         super(firma, putere, greutate);
         this.tipManer = tipManer;
+         this.diametruDisc = diametruDisc;
+        this.turatieMaxima = turatieMaxima;
+        this.protectieSupraIncalzire = protectieSupraIncalzire;
     }
 
     // Constructor de copiere
     public PolizorUnghiular(PolizorUnghiular polizor) {
         super(polizor);
         this.tipManer = polizor.tipManer;
+         this.diametruDisc = polizor.diametruDisc;
+        this.turatieMaxima = polizor.turatieMaxima;
+        this.protectieSupraIncalzire = polizor.protectieSupraIncalzire;
     }
 
     // Metoda toString
+    @Override
     public String toString() {
-        return super.toString() + ", Tip maner: " + tipManer;
+        return super.toString() + ", Tip maner: " + tipManer+", Diametru disc: " + diametruDisc + " mm" +", Turatie maxima: " + turatieMaxima + " RPM" +", Protectie la supraîncălzire: " + protectieSupraIncalzire;
     }
 }
