@@ -8,7 +8,7 @@ package com.mycompany.proiectpoo;
  *
  * @author nechi
  */
-    abstract class SculeElectrice {
+    public class SculeElectrice {
     protected String firma;
     protected int putere;  // in wati
     protected float greutate; // in kilograme
@@ -33,9 +33,6 @@ package com.mycompany.proiectpoo;
         this.putere = scula.putere;
         this.greutate = scula.greutate;
     }
-    
-    // Metoda abstracta
-    public abstract String specificatii();
 
     // Metoda toString
     @Override
