@@ -11,7 +11,7 @@ package com.mycompany.proiectpoo;
 
 public class MasinaGaurit extends SculeElectrice {
     private int numarPercutii;
-     private boolean functiePercutie;
+    boolean functiePercutie;
     private int diametruMaximGaurire;
     private String tipMandrina;
 

@@ -11,7 +11,7 @@ package com.mycompany.proiectpoo;
 
 public class PolizorUnghiular extends SculeElectrice {
     private String tipManer;
-    private int diametruDisc;
+    int diametruDisc;
     private int turatieMaxima;
     private boolean protectieSupraIncalzire;
 

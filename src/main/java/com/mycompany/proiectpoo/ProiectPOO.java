@@ -55,6 +55,20 @@ public class ProiectPOO {
         polizoareU.add(new PolizorUnghiular("Skil", 2700, 7.2f, "Ergonomic", 170, 16500, false));
         
         
+        Vector<MasinaGaurit> masiniGaurit = new Vector<>();
+
+        masiniGaurit.add(new MasinaGaurit("Bosch", 800, 3.5f, 2800, true, 13, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Makita", 900, 3.8f, 3000, false, 16, "Baterie"));
+        masiniGaurit.add(new MasinaGaurit("DeWalt", 850, 4.0f, 3200, true, 13, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Hilti", 950, 4.2f, 3500, false, 10, "Baterie"));
+        masiniGaurit.add(new MasinaGaurit("Black+Decker", 780, 3.2f, 2700, true, 12, "Baterie"));
+        masiniGaurit.add(new MasinaGaurit("Ryobi", 860, 3.9f, 2900, true, 14, "Baterie"));
+        masiniGaurit.add(new MasinaGaurit("Hitachi", 920, 4.1f, 3100, false, 16, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Einhell", 750, 3.1f, 2600, true, 10, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Festool", 980, 4.5f, 3300, true, 18, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Metabo", 890, 3.7f, 3000, false, 15, "Electric"));
+        
+        
         Vector<AparatDeSudura> aparateSudura = new Vector<>();
         
         aparateSudura.add(new AparatDeSudura("Makita", 2000, 5.5f, "Electrod de inox", 6.0f, 3, "Curent continuu", 85.5f));
@@ -142,53 +156,76 @@ public class ProiectPOO {
 
         System.out.println("Polizoare:");
         for (Polizor polizor : polizoare) {
-            if (polizor.isArePornireLina() && polizor.getTipAlimentare().equals("Electric")) 
+            if (polizor.arePornireLina == false && polizor.tipAlimentare.equals("Electric")) 
                 System.out.println(polizor);
         }
 
         System.out.println("\nSlefuitoare:");
         for (Slefuitor slefuitor : slefuitoare) {
-            if (slefuitor.isEsteProfesional() && slefuitor.getTipSuprafata().equals("Lemn"))
+            if (slefuitor.esteProfesional && slefuitor.tipSuprafata.equals("Lemn"))
             System.out.println(slefuitor);
         }
         
         System.out.println("\nPolizoare Unghiulare:");
         for (PolizorUnghiular objpolizor : polizoareU) {
-            System.out.println(objpolizor);
+            if (objpolizor.diametruDisc > 100 && objpolizor.greutate > 6.0) {
+                  System.out.println(objpolizor);
+            }
+        }
+        
+        System.out.println("\nMasini de Gaurit:");
+        for (MasinaGaurit masina : masiniGaurit) {
+            if (masina.putere < 800 && masina.functiePercutie) {
+             System.out.println(masina);
+             }
         }
    
         System.out.println("\nAparat de sudura:");
         for (AparatDeSudura aparat : aparateSudura) 
             {
-            System.out.println(aparat);
+                if(aparat.getGarantieAni() > 2 && aparat.getTipCurent().equals("Curent continuu"))
+              {
+                System.out.println(aparat);
+              }
             }
         
         System.out.println("\nGenerator electric:");
          for (GeneratorElectric generator : generatoareElectrice) 
             {
-            System.out.println(generator);
-            }   
+                if(generator.getNumarPrize() > 2 && generator.getTipCombustibil().equals("Benzina"))
+                {
+                    System.out.println(generator);
+                }
+            }  
          
-               
+         
         System.out.println("\nFierastraie pendulare:");
         for (FierastrauPendular fierastrau : fierastraiePendulare) {
-            System.out.println(fierastrau);
+            if (fierastrau.isVitezaReglabila() && fierastrau.getNivelZgomot() < 80) {
+                System.out.println(fierastrau);
+            }        
         }
 
         
         System.out.println("\nSurubelnite Electrice:");
         for (SurubelnitaElectrica surubelnita : surubelnite) {
-            System.out.println(surubelnita);
+            if (surubelnita.isLuminaLed() && surubelnita.getAutonomie() > 7) {
+                System.out.println(surubelnita);
+             }
         }
 
         System.out.println("\nVector Rotopercutoare:");
         for (Rotopercutor roto : vectorRotopercutoare) {
-            System.out.println(roto);
+              if (roto.getPercutiiPeMinut() > 3000 && roto.isFunctieInversare()) {
+                System.out.println(roto);
+            }
         }
         
         System.out.println("\nVector Compactoare:");
         for (Compactor comp : vectorCompactoare) {
-            System.out.println(comp);
+             if (comp.getFortaCompactare() > 500 && comp.isMotorizat()) {
+                System.out.println(comp);
+            }
         }
     }
 }

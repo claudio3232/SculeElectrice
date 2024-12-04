@@ -11,9 +11,9 @@ package com.mycompany.proiectpoo;
 
 class Slefuitor extends SculeElectrice {
     private float dimensiuneDisc; // in mm
-    private boolean esteProfesional;
+    boolean esteProfesional;
     private boolean vitezaVariabila;
-    private String tipSuprafata; // (lemn, metal, piatra)
+    public String tipSuprafata; // (lemn, metal, piatra)
     private int garantie; // in luni
     
     // Constructor fara argumente

@@ -11,10 +11,10 @@ package com.mycompany.proiectpoo;
 
 class Polizor extends SculeElectrice {
     private int turatiiMaxime; // (RPM)
-    private boolean arePornireLina;
+     boolean arePornireLina;
     float diametrulDiscului;
     private String tipDisc; //(diamantat, metalic)
-    private String tipAlimentare; //(electric, pe baterie)
+    public String tipAlimentare; //(electric, pe baterie)
     
     // Constructor fara argumente
     public Polizor() {
