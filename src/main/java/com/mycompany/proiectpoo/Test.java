@@ -17,9 +17,10 @@ package com.mycompany.proiectpoo;
         SurubelnitaElectrica surubelnita3 = new SurubelnitaElectrica(surubelnita2);
      
         Polizor polizor1 = new Polizor();
-        Polizor polizor2 = new Polizor("Bosch", 1500, 5.0f, 12000, 2000, 25.0f, "Diamantat", "Electric");
+        Polizor polizor2 = new Polizor("Bosch", 1500, 5.0f, 12000, true, 25.0f, "Diamantat", "Electric");
         Polizor polizor3 = new Polizor(polizor2);
-      
+        Polizor polizor4 = new Polizor(polizor2);
+        
         Slefuitor slefuitor1 = new Slefuitor();
         Slefuitor slefuitor2 = new Slefuitor("Makita", 900, 2.8f, 130.0f, false, true, "Metal", 36);
         Slefuitor slefuitor3 = new Slefuitor(slefuitor2);

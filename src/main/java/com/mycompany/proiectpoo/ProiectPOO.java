@@ -16,18 +16,17 @@ public class ProiectPOO {
 
         Vector<Polizor> polizoare = new Vector<>();
 
-        polizoare.add(new Polizor("Bosch", 1500, 5.0f, 12000, 2000, 25.0f, "Diamantat", "Electric"));
-        polizoare.add(new Polizor("Makita", 1700, 5.4f, 12500, 2050, 25.5f, "Metallic", "Electric"));
-        polizoare.add(new Polizor("DeWalt", 1900, 5.8f, 13000, 2100, 26.0f, "Diamantat", "Baterie"));
-        polizoare.add(new Polizor("Hilti", 2100, 6.0f, 13500, 2150, 26.5f, "Metallic", "Electric"));
-        polizoare.add(new Polizor("Black+Decker", 2200, 6.2f, 14000, 2200, 27.0f, "Diamantat", "Electric"));
-        polizoare.add(new Polizor("Ryobi", 2300, 6.4f, 14500, 2250, 27.5f, "Metallic", "Baterie"));
-        polizoare.add(new Polizor("Craftsman", 2400, 6.6f, 15000, 2300, 28.0f, "Diamantat", "Electric"));
-        polizoare.add(new Polizor("Hitachi", 2500, 6.8f, 15500, 2350, 28.5f, "Metallic", "Electric"));
-        polizoare.add(new Polizor("Einhell", 2600, 7.0f, 16000, 2400, 29.0f, "Diamantat", "Baterie"));
-        polizoare.add(new Polizor("Skil", 2700, 7.2f, 16500, 2450, 29.5f, "Metallic", "Electric"));
+        polizoare.add(new Polizor("Bosch", 1500, 5.0f, 12000, true, 25.0f, "Diamantat", "Electric"));
+        polizoare.add(new Polizor("Makita", 1700, 5.4f, 12500, false, 25.5f, "Metallic", "Electric"));
+        polizoare.add(new Polizor("DeWalt", 1900, 5.8f, 13000, false, 26.0f, "Diamantat", "Baterie"));
+        polizoare.add(new Polizor("Hilti", 2100, 6.0f, 13500, true, 26.5f, "Metallic", "Electric"));
+        polizoare.add(new Polizor("Black+Decker", 2200, 6.2f, 14000, false, 27.0f, "Diamantat", "Electric"));
+        polizoare.add(new Polizor("Ryobi", 2300, 6.4f, 14500, true, 27.5f, "Metallic", "Baterie"));
+        polizoare.add(new Polizor("Craftsman", 2400, 6.6f, 15000, true, 28.0f, "Diamantat", "Electric"));
+        polizoare.add(new Polizor("Hitachi", 2500, 6.8f, 15500, false, 28.5f, "Metallic", "Electric"));
+        polizoare.add(new Polizor("Einhell", 2600, 7.0f, 16000, true, 29.0f, "Diamantat", "Baterie"));
+        polizoare.add(new Polizor("Skil", 2700, 7.2f, 16500, false, 29.5f, "Metallic", "Electric"));
 
-        
         Vector<Slefuitor> slefuitoare = new Vector<>();
 
         slefuitoare.add(new Slefuitor("Bosch", 800, 2.5f, 125.0f, true, false, "Lemn", 24));
@@ -98,6 +97,7 @@ public class ProiectPOO {
         fierastraiePendulare.add(new FierastrauPendular("Stanley", 600, 2.2f, 2600, false, false, 72, "Curbă"));
         
         
+        
         Vector<SurubelnitaElectrica> surubelnite = new Vector<>();
         
         surubelnite.add(new SurubelnitaElectrica("Bosch", 18, 1.5f, 2, 1.5f, 10.0f, "Baterie", true));
@@ -142,11 +142,13 @@ public class ProiectPOO {
 
         System.out.println("Polizoare:");
         for (Polizor polizor : polizoare) {
-            System.out.println(polizor);
+            if (polizor.isArePornireLina() && polizor.getTipAlimentare().equals("Electric")) 
+                System.out.println(polizor);
         }
 
         System.out.println("\nSlefuitoare:");
         for (Slefuitor slefuitor : slefuitoare) {
+            if (slefuitor.isEsteProfesional() && slefuitor.getTipSuprafata().equals("Lemn"))
             System.out.println(slefuitor);
         }
         
