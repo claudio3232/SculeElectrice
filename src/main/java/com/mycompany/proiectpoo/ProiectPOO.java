@@ -192,7 +192,7 @@ public class ProiectPOO {
         System.out.println("\nGenerator electric:");
          for (GeneratorElectric generator : generatoareElectrice) 
             {
-                if(generator.getNumarPrize() > 2 && generator.getTipCombustibil().equals("Benzina"))
+                if(generator.getNumarPrize() > 2 && generator.getTipCombustibil() != ("Benzina"))
                 {
                     System.out.println(generator);
                 }
