@@ -11,7 +11,7 @@ package com.mycompany.proiectpoo;
 
 public class MasinaGaurit extends SculeElectrice {
     private int numarPercutii;
-     private boolean functiePercutie;
+     boolean functiePercutie;
     private int diametruMaximGaurire;
     private String tipMandrina;
 
@@ -48,5 +48,36 @@ public class MasinaGaurit extends SculeElectrice {
     @Override
     public String toString() {
         return super.toString() + ", Numar percutii: " + numarPercutii + " pe minut"+", Functie percutie: " + functiePercutie +", Diametru maxim gaurire: " + diametruMaximGaurire + " mm" +", Tip mandrina: " + tipMandrina;
+    }
+     public int getNumarPercutii() {
+        return numarPercutii;
+    }
+
+    public void setNumarPercutii(int numarPercutii) {
+        this.numarPercutii = numarPercutii;
+    }
+
+    public boolean isFunctiePercutie() {
+        return functiePercutie;
+    }
+
+    public void setFunctiePercutie(boolean functiePercutie) {
+        this.functiePercutie = functiePercutie;
+    }
+
+    public int getDiametruMaximGaurire() {
+        return diametruMaximGaurire;
+    }
+
+    public void setDiametruMaximGaurire(int diametruMaximGaurire) {
+        this.diametruMaximGaurire = diametruMaximGaurire;
+    }
+
+    public String getTipMandrina() {
+        return tipMandrina;
+    }
+
+    public void setTipMandrina(String tipMandrina) {
+        this.tipMandrina = tipMandrina;
     }
 }

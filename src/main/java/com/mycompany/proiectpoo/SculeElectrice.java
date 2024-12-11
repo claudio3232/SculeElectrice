@@ -50,4 +50,27 @@ package com.mycompany.proiectpoo;
     public void functioneaza() {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
-}
+     public String getFirma() {
+        return firma;
+    }
+
+    public void setFirma(String firma) {
+        this.firma = firma;
+    }
+
+    public int getPutere() {
+        return putere;
+    }
+
+    public void setPutere(int putere) {
+        this.putere = putere;
+    }
+
+    public float getGreutate() {
+        return greutate;
+    }
+
+    public void setGreutate(float greutate) {
+        this.greutate = greutate;
+    }
+    }

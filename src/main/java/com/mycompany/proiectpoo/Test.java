@@ -51,6 +51,7 @@ package com.mycompany.proiectpoo;
         Compactor comp1 = new Compactor(); 
         Compactor comp2 = new Compactor("Caterpillar", 1200, 100.0f, 600.0, 15, 2.0, true, "Diesel"); 
         Compactor comp3 = new Compactor(comp2);
+        Compactor comp4 = new Compactor(comp1);
         
         
         System.out.println("Polizor unghiular: ");

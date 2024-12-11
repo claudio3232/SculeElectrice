@@ -54,7 +54,19 @@ public class ProiectPOO {
         polizoareU.add(new PolizorUnghiular("Hitachi", 2500, 6.8f, "Fix", 160, 15500, false));
         polizoareU.add(new PolizorUnghiular("Einhell", 2600, 7.0f, "Pivotant", 165, 16000, true));
         polizoareU.add(new PolizorUnghiular("Skil", 2700, 7.2f, "Ergonomic", 170, 16500, false));
-        
+      
+        Vector<MasinaGaurit> masiniGaurit = new Vector<>();
+
+        masiniGaurit.add(new MasinaGaurit("Bosch", 800, 3.5f, 2800, true, 13, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Makita", 900, 3.8f, 3000, false, 16, "Baterie"));
+        masiniGaurit.add(new MasinaGaurit("DeWalt", 850, 4.0f, 3200, true, 13, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Hilti", 950, 4.2f, 3500, false, 10, "Baterie"));
+        masiniGaurit.add(new MasinaGaurit("Black+Decker", 780, 3.2f, 2700, true, 12, "Baterie"));
+        masiniGaurit.add(new MasinaGaurit("Ryobi", 860, 3.9f, 2900, true, 14, "Baterie"));
+        masiniGaurit.add(new MasinaGaurit("Hitachi", 920, 4.1f, 3100, false, 16, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Einhell", 750, 3.1f, 2600, true, 10, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Festool", 980, 4.5f, 3300, true, 18, "Electric"));
+        masiniGaurit.add(new MasinaGaurit("Metabo", 890, 3.7f, 3000, false, 15, "Electric"));
         
         Vector<AparatDeSudura> aparateSudura = new Vector<>();
         
@@ -136,7 +148,7 @@ public class ProiectPOO {
         vectorCompactoare.add(new Compactor("Wacker Neuson", 1450, 125.0f, 850.0, 24, 3.2, false, "Propane"));
         vectorCompactoare.add(new Compactor("JCB", 1500, 130.0f, 900.0, 26, 3.5, true, "Diesel"));
         vectorCompactoare.add(new Compactor("Case", 1550, 135.0f, 950.0, 28, 3.8, false, "Electric"));
-        vectorCompactoare.add(new Compactor("Hitachi", 1600, 140.0f, 1000.0, 30, 4.0, true, "Hydraulic"));
+        vectorCompactoare.add(new Compactor());
         vectorCompactoare.add(new Compactor("Komatsu", 1650, 145.0f, 1050.0, 32, 4.2, false, "Pneumatic"));
 
 
@@ -152,7 +164,18 @@ public class ProiectPOO {
         
         System.out.println("\nPolizoare Unghiulare:");
         for (PolizorUnghiular objpolizor : polizoareU) {
+             if (objpolizor.diametruDisc > 140 && objpolizor.greutate < 6.0) {
+        
+    }
             System.out.println(objpolizor);
+        }
+        
+        System.out.println("\nMasini de Gaurit:");
+        for (MasinaGaurit masina : masiniGaurit) {
+            if (masina.putere > 1000 && masina.functiePercutie) {
+        
+    }
+              System.out.println(masina);
         }
    
         System.out.println("\nAparat de sudura:");
@@ -188,7 +211,9 @@ public class ProiectPOO {
         for (Compactor comp : vectorCompactoare) {
             System.out.println(comp);
         }
+        Interfata interfata = new Interfata(aparateSudura,vectorCompactoare,fierastraiePendulare,generatoareElectrice,masiniGaurit,polizoare,polizoareU,vectorRotopercutoare,slefuitoare,surubelnite);
     }
+   
 }
        
  

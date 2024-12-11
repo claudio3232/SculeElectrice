@@ -11,7 +11,7 @@ package com.mycompany.proiectpoo;
 
 public class PolizorUnghiular extends SculeElectrice {
     private String tipManer;
-    private int diametruDisc;
+    int diametruDisc;
     private int turatieMaxima;
     private boolean protectieSupraIncalzire;
 
@@ -46,6 +46,38 @@ public class PolizorUnghiular extends SculeElectrice {
     // Metoda toString
     @Override
     public String toString() {
-        return super.toString() + ", Tip maner: " + tipManer+", Diametru disc: " + diametruDisc + " mm" +", Turatie maxima: " + turatieMaxima + " RPM" +", Protectie la supraîncălzire: " + protectieSupraIncalzire;
+        return super.toString() + ", Tip maner: " + tipManer+", Diametru disc: " + diametruDisc + " mm" +", Turatie maxima: " + turatieMaxima + " RPM" +", Protectie la supraincalzire: " + protectieSupraIncalzire;
+    }
+    public String getTipManer() {
+        return tipManer;
+    }
+
+    public void setTipManer(String tipManer) {
+        this.tipManer = tipManer;
+    }
+
+    public int getDiametruDisc() {
+        return diametruDisc;
+    }
+
+    public void setDiametruDisc(int diametruDisc) {
+        this.diametruDisc = diametruDisc;
+    }
+
+    public int getTuratieMaxima() {
+        return turatieMaxima;
+    }
+
+    public void setTuratieMaxima(int turatieMaxima) {
+        this.turatieMaxima = turatieMaxima;
+    }
+
+    public boolean isProtectieSupraIncalzire() {
+        return protectieSupraIncalzire;
+    }
+
+    public void setProtectieSupraIncalzire(boolean protectieSupraIncalzire) {
+        this.protectieSupraIncalzire = protectieSupraIncalzire;
     }
 }
+
